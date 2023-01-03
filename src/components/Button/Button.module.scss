@@ -1,0 +1,96 @@
+.wrapper {
+    font-size: 1.7rem;
+    font-weight: 600;
+    min-width: 10rem;
+    padding: 9px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    + .wrapper {
+        margin-left: 10px;
+    }
+}
+.login {
+    border: 2px solid rgba(0, 0, 0, 0.542);
+    position: relative;
+    border-radius: 0;
+    &:hover {
+        background-color: var(--primary);
+        color: #fff;
+    }
+    &:hover ~ span {
+        color: #fff;
+    }
+}
+.login::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 5px);
+    background: #fff;
+    height: calc(100% - 12px);
+    transition: 0.5s ease-in-out;
+    transform: scaleY(1);
+    transition-delay: 0.5s;
+}
+.login::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 3px;
+    width: calc(100% - 6px);
+    background: #fff;
+    height: calc(100% + 8px);
+    transition: 0.5s ease-in-out;
+    transform: scaleX(1);
+}
+.login:hover::before {
+    transform: scaleY(0);
+}
+.login:hover::after {
+    transform: scaleX(0);
+}
+.login span {
+    position: relative;
+    z-index: 2;
+}
+.outline {
+    transition: ease-in-out;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background-color: transparent;
+    &:hover {
+        background-color: #daefeb;
+    }
+}
+.small {
+    min-width: 90px;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+.large {
+    min-width: 160px;
+    min-height: 28px;
+    padding: 6px 8px;
+    border-radius: 8px;
+}
+.primarybtn {
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+.primarybtn:hover {
+    background-color: rgb(42, 181, 156);
+}
+.outlineCircle {
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    background-color: transparent;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+    color: var(--default-text-color);
+    border-radius: 40px;
+}

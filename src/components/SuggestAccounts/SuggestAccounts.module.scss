@@ -1,0 +1,69 @@
+.wrapper {
+    max-width: 100%;
+    position: relative;
+    padding: 15px 15px 7px 7px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 1%;
+        width: 90%;
+        left: 5%;
+        height: 1px;
+        background-color: rgba(218, 218, 218, 0.48);
+    }
+}
+.accountWrapper {
+    display: flex;
+    align-items: center;
+    padding: 9px 16px;
+    position: relative;
+    transition: all 0.2s linear;
+}
+.accountWrapper:hover {
+    cursor: pointer;
+    background-color: rgba(22, 24, 35, 0.03);
+}
+.account-avatar {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center;
+    margin-right: 15px;
+}
+.account-infor {
+    flex: 1;
+    line-height: 2rem;
+}
+.account-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+}
+.account-username {
+    font-size: 1.3rem;
+    color: rgba(22, 24, 35, 0.685);
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+.account-icon {
+    font-size: 1.3rem;
+    margin-left: 8px;
+    color: rgba(254, 44, 85, 1);
+}
+.label {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(71, 71, 71, 0.74);
+    line-height: 22px;
+    margin-bottom: 13px;
+}
+.handle-btn {
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin: 13px 7px;
+    padding: 0 7px;
+    line-height: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+}

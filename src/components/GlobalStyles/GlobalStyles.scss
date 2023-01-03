@@ -1,0 +1,83 @@
+@import 'normalize.css';
+
+:root {
+    --primary: #20d1b2;
+    --primary-icon: rgb(254, 44, 85);
+    --default-layout_header-height: 60px;
+    --default-layout_width-content: 1150px;
+    --default-sub-text-color: #7d7d7e;
+    --default-background-color: rgb(255, 255, 255);
+    --default-box-shadow-color: 0px 1px 2px rgb(220, 220, 220);
+    --default-main-text-color: rgb(22, 24, 35);
+    --font-default: 'ProximaNova';
+}
+.dark {
+    --default-background-color: rgb(18, 18, 18);
+    --default-box-shadow-color: 0px 1px 2px rgb(92, 92, 92);
+    --default-main-text-color: rgba(255, 255, 255, 0.9);
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: var(--font-default), sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+    text-rendering: optimizeSpeed;
+    background: var(--default-background-color);
+}
+//font family
+@font-face {
+    font-family: var(--font-default);
+    src: url('/assets/fonts/Proxima-Nova-Bold.woff');
+    font-weight: 700;
+}
+@font-face {
+    font-family: var(--font-default);
+    src: url('/assets/fonts/Proxima-Nova-Regular.woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: var(--font-default);
+    src: url('/assets/fonts/ProximaNova-Semibold.woff2');
+    font-weight: 600;
+}
+@font-face {
+    font-family: SofiaPro;
+    src: url('/assets/fonts/sofiapro-bold.woff2');
+    font-weight: 700;
+}
+// Custom
+body {
+    .tippy-box {
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+    .tippy-arrow {
+        color: #333;
+    }
+}
+html {
+    overflow-y: overlay;
+}
+html::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+html::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.088);
+}
+
+html::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0);
+}

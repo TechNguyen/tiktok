@@ -1,0 +1,66 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding: 9px 16px;
+    position: relative;
+    transition: 0.35s linear;
+}
+.wrapper:hover {
+    cursor: pointer;
+    background-color: rgba(22, 24, 35, 0.077);
+}
+.wrapper:hover .search-progress {
+    display: block;
+}
+@keyframes timeout {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+.wrapper:hover .search-progress {
+    animation: timeout 0.5s linear;
+}
+.search-progress {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(254, 44, 86, 0.958);
+    border-radius: 2px;
+    display: none;
+}
+.account-avatar {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center;
+    margin-right: 15px;
+}
+.account-infor {
+    flex: 1;
+    line-height: 2rem;
+}
+.account-name {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.account-username {
+    font-size: 1.4rem;
+    color: rgba(22, 24, 35, 0.685);
+    font-weight: 400;
+}
+.account-icon {
+    font-size: 1.5rem;
+    margin-left: 8px;
+    color: rgba(254, 44, 85, 1);
+}
+
+

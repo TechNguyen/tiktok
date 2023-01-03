@@ -1,0 +1,43 @@
+.wrapper {
+    padding: 2rem;
+    width: 300px;
+}
+.account-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+.account-avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+.account-infor {
+}
+.account-name {
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    margin-bottom: 0.4rem;
+}
+.account-icon {
+    margin-left: 0.8rem;
+    color: var(--primary-icon);
+}
+.account-username {
+    font-size: 1.5rem;
+}
+.account-analytics {
+    display: flex;
+    margin-top: 1rem;
+}
+.account-label {
+    color: rgba(71, 71, 71, 0.74);
+    font-size: 1.5rem;
+    margin-right: 1.8rem;
+}
+.account-value {
+    margin-right: 0.6rem;
+}

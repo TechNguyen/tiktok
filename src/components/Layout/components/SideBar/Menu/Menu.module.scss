@@ -1,0 +1,28 @@
+.menu_item {
+    display: flex;
+    align-items: center;
+    padding: 9px 9px;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+    &.active {
+        color: var(--primary);
+        .icon {
+            display: none;
+        }
+        .active-icon {
+            display: block;
+        }
+    }
+}
+.menu_item:hover {
+    background-color: rgba(22, 24, 35, 0.03);
+}
+.menu-item_title {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    margin-left: 9px;
+}
+.active-icon {
+    display: none;
+}

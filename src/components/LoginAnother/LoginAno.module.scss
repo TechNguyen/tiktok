@@ -1,0 +1,38 @@
+.wrapper {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px 8px 25px;
+    &::before {
+        content: '';
+        position: absolute;
+        justify-content: center;
+        top: 1%;
+        width: 90%;
+        left: 5%;
+        height: 1px;
+        background-color: rgba(218, 218, 218, 0.48);
+    }
+}
+.login-title {
+    color: rgba(22, 24, 35, 0.367);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.login-btn {
+    font-size: 17px;
+    margin-top: 20px;
+    font-weight: 700;
+    padding: 11px 5px;
+    line-height: 22px;
+    border: 1px solid var(--primary);
+    cursor: pointer;
+    border-radius: 5px;
+    color: var(--primary);
+    background-color: #fff;
+    &:hover {
+        background-color: rgb(225, 241, 238);
+    }
+}

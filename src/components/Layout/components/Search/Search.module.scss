@@ -1,0 +1,97 @@
+
+.header-search {
+    background-color: rgba(22, 24, 35, 0.06);
+    width: 350px;
+    height: var(--search-height, 46px);
+    border-radius: var(--search-border-radius);
+    padding-left: 16px;
+    position: relative;
+    input {
+        height: 100%;
+        flex: 1;
+        font-size: 1.6rem;
+        line-height: 22px;
+        border: none;
+        outline: none;
+        color: var(--default-text-color);
+        background-color: transparent;
+        caret-color: var(--primary);
+    }
+    display: flex;
+    &:focus-within {
+        outline: 1px solid rgba(22, 24, 35, 0.25);
+    }
+}
+.header-search,
+.header-search_result {
+    width: 350px;
+}
+
+.header-input:not(:placeholder-shown) ~ .search-btn {
+    color: rgba(22, 24, 35, 0.742);
+}
+.header-clear {
+    cursor: pointer;
+    color: var(--search-color-icon);
+    font-size: 1.6rem;
+    margin: 0 12px;
+}
+.header-loading {
+    color: var(--search-color-icon);
+    position: absolute;
+    top: calc(var(--search-top-space) + 3px);
+    right: calc(var(--search-btn-width) + 12px);
+    animation: rotate 2s infinite;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.search-btn {
+    width: var(--search-btn-width);
+    height: 100%;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--search-color-icon);
+    outline: none;
+    border: none;
+    border-top-right-radius: var(--search-border-radius);
+    border-bottom-right-radius: var(--search-border-radius);
+    &::before {
+        content: '';
+        background-color: rgba(22, 24, 35, 0.12);
+        width: 1px;
+        height: calc(var(--search-height) - 18px);
+        position: absolute;
+        top: var(--search-top-space, 9px);
+        right: var(--search-btn-width, 52px);
+    }
+    &:hover .search_btn-icon {
+        transition: 0.35s ease-in-out;
+        transform: rotate(90deg);
+        color: rgba(22, 24, 35, 0.742);
+    }
+}
+.search-btn:hover {
+    background-color: rgba(22, 24, 35, 0.03);
+}
+.search {
+    font-size: 30px;
+    color: #eee;
+}
+.search-account {
+    font-size: 1.7rem;
+    color: rgba(22, 24, 35, 0.685);
+    padding: 7px 10px;
+    font-weight: 500;
+}
+button,
+input [tabindex] {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

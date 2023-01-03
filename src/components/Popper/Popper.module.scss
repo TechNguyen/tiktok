@@ -1,0 +1,27 @@
+.wrapper {
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
+    max-height: min((100vh - 96px) - 60px, 734px);
+    // min-height: 100px;
+    overflow-y: overlay;
+}
+.wrapper::-webkit-scrollbar {
+    width: 7px;
+    height: 12px;
+}
+.wrapper::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+}
+.wrapper::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: linear-gradient(right, #fff, #e4e4e4);
+    border: 1px solid transparent;
+    background-color: rgba(0, 0, 0, 0.089);
+}
+.flex {
+    overflow: hidden !important;
+    padding: 7px 0;
+}
